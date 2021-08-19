@@ -1,0 +1,5 @@
+request - Requisição
+response - resposta
+
+response -
+200- deu certo
