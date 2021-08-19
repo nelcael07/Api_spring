@@ -1,0 +1,14 @@
+oq é rest?
+
+é um modelo arquitetural bem utilizado na comunicação de sistemas que utiliza o www
+
+. é cliente servidor (ou seja, as duas partes devem estar separadas)
+. stateless(não deve guardar o estado do cliente)
+. deve informar o cliente as propriedades que ele pode fazer cache
+. O cliente pode solicitar um codigo do servidor e executá-lo
+. o rest suporta varios tipos de arquivos(imagens, pdfs e etc...)
+. desenvolvimento facil e rápido
+. aplicativos mobile tem ganhado cada vez mais espaço e precisão interagir rapidamente com os servidores e o padrão rest é o mais rapido no processo request response
+. além de ser muito mais performatico utilizando menos recursos
+. todas as grandes empresa utilizam rest (netflix recebe mais de 1 bilhão de request - requisições por dia) 
+

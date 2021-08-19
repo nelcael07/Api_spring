@@ -8,3 +8,4 @@ soap x rest
 - ambos os modelos usam http como comunicação, porém o rest usa unicamente o http e o soap usa smtp ftp etc.
 - a performace do rest é bem melhor
 - é facil a invocação com js no rest
+ 
