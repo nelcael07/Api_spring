@@ -1,0 +1,4 @@
+parametro passados na url
+
+. são passados via url
+. a maioria dos parametros são passados via body da request
