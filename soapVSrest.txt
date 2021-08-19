@@ -1,0 +1,10 @@
+soap x rest
+
+- duas metodologias diferentes 
+- o soap é um protocolo de troca de mensagens
+- o rest é um estilo arquitetural
+- o soap usa wsdl na comunicação entre cliente e servidor
+- o rest usa xml e json para enviar e receber os dados
+- ambos os modelos usam http como comunicação, porém o rest usa unicamente o http e o soap usa smtp ftp etc.
+- a performace do rest é bem melhor
+- é facil a invocação com js no rest
