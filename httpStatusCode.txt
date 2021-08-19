@@ -1,0 +1,5 @@
+do 100 ao 102 são os de informacionais
+200 ao 226 são os de sucesso
+300 ao 308 são os de redirecionamento 
+400 ao 499 são os de erro de client
+500 ao 599 são os de erro de servidor
