@@ -1,0 +1,7 @@
+patch - usado para update parciais,ou seja, quando eu vou atualizar apenas determinados determinados
+head - é bem parecido com o get, mas, retorna apenas a respose line e o head
+trace - permite recuperar o conteudo de uma requisição de volta para debug
+options - permite ver quais são as opções suportadas pela api
+connect - é usado para estabelecer uma conexão de rede com um servidor via http
+
+desses verbos, o mais usado é o patch que pode substituir o put
