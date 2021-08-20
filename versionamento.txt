@@ -1,0 +1,10 @@
+Sempre é valido versionar seu codigo, para que consiga se achar melhor na codificação da api
+
+versionamento por url tem 3 maneiras:
+
+subdominio - especifica a versão logo no inicio da url
+patch - especifica a versão após a base url
+querystring - é adicionada no final da url e está em desuso pela sua falta de legibilidade
+
+tem com fazer o versionamento pelo header - ponto positivo é que a url permanece clean e intacta
+
