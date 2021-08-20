@@ -1,0 +1,4 @@
+Uma api hateoas provem informações que permitem navegar seus endpoiters de forma dinamica, visto que inclui link junto as respostas
+
+Resumindo, as apis tem contem nas suas respostas links para os proximos passos do client
+
