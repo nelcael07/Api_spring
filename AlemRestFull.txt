@@ -1,0 +1,1 @@
+se sua api é comercializada, vc pode restringir a quantidade de requisições e acessor por plano de assinatura
