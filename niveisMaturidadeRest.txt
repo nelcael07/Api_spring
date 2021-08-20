@@ -1,0 +1,9 @@
+.rest-full é o nivel mais avançado do rest
+
+o rest tem 4 niveis de maturidade:
+ 
+. level 0 é quando um sistema usa apenas um endpoint, ela é caracterizada rest apenas pq usa o http para trafegar json
+. level 1 é quando já tem um endpoint para cada coisa. Nesse nivel não tem preocupação com os verbos, apenas usa-se get and post
+. level 2 são usados os verbos de comum acordo com o padrão do rest
+. level 3 é usado hypermidia e controls é quando uma aplicação tem niveis de json que contem uma informação dentro da outra, ou seja, um json trás pessoa e dentro de pessoas eu trago outro link de outro serviço - REST FULL
+
