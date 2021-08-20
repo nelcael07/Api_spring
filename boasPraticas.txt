@@ -1,0 +1,11 @@
+. vc deve paginar seus dados
+. configurar filtros
+. definir recursos logicos
+. separar os conceitos
+. ser tolerante a falhas - sempre retornar uma mensagem ao cliente
+. criar cash de informações muito requisitadas
+. conectividade - sempre facilitar a conexão com sua api
+. devinir timeouts - no qual se o cliente não obter resposta em um determinado tempo ele recebera uma mensagem de erro
+. documentação - disponibilizar a melhor documentação possivel 
+. é interessante que a sua api forneça suporte a exportação para algum tipo de arquivo
+. notificações - quando a requisição for muito grande é valido notificar o cliente com um 201 dizendo que quando terminar o carregamento ele será avisado
