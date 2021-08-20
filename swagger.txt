@@ -1,0 +1,4 @@
+é um framework mais usados para documentar apis rest.
+Começou como um framework e atualmente é um padrão para documentação de apis rest.
+
+Serve para os client verem quais verbos serão aceitos, qual retorno e qual o json 
