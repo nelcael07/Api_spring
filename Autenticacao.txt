@@ -1,0 +1,9 @@
+para prover a segurança da api se usa o jwt
+
+O client faz o login por meio do post, a api devovel um token e o client armazena esse token para usar nas proximas request. Se o token estiver errado ele vai retornar um error dizendo que não é altorizado
+O token tem um tempo de inspiração 
+Tem com fazer um refresh token, para que a api quando inpirar o tempo, mande um novo token para o client
+
+Um corpo de token tem, o header, o corpo que é separado por ponto do header(nele contém os dados) e o footer que tem a assinatura que irá definir se ele é valido ou não 
+
+
