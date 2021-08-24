@@ -5,38 +5,36 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import br.com.erudio.br.com.erudio.exception.unuportedMathOperationException;
+
 /**
  * GreetingController
  */
 @RestController
 public class MathController {
-  // caminho na url
-  @RequestMapping(value="/sum/numberOne/numberTwo", method = RequestMethod.GET)
-  // pathVariable torna obrigatorio a passagem da propriedade
+  @RequestMapping(value="/sum/{numberOne}/{numberTwo}", method = RequestMethod.GET)
   public double sum(
     @PathVariable(value = "numberOne") String numberOne, 
     @PathVariable(value = "numberTwo") String numberTwo
   ) throws Exception {
       if (!isNumeric(numberOne) || !isNumeric(numberTwo)){
-        throw new Exception();
+        throw new unuportedMathOperationException("Please set a numeric value");
       }
       Double sum = convertToDouble(numberOne) + convertToDouble(numberTwo);
       return sum;
   }
+  
+  private Double convertToDouble(String strNumber){
+    if (strNumber == null) return 0D;
+    String number = strNumber.replaceAll(",", ".");
+    if (isNumeric(number)) return Double.parseDouble(number);
+    return 0D;
+  }
 
   private boolean isNumeric(String strNumber){
     if (strNumber == null) return false;
-    String Number = strNumber.replaceAll(",", ".");
-    // regex
-    return Number.matches("[+-]?[0-9]*\\\\.?[0.9]+");
-  }
-
-  private Double convertToDouble(String strNumber){
-    // o 0D é um 0 double
-    if (strNumber == null) return 0D;
-    String Number = strNumber.replaceAll(",", ".");
-    if (isNumeric(Number)) return Double.parseDouble(Number);
-    return 0D;
+    String number = strNumber.replaceAll(",", ".");
+    return number.matches("[-+]?[0-9]*\\.?[0-9]+");
   }
 
 }
