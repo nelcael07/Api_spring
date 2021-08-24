@@ -24,12 +24,19 @@ public class MathController {
       return sum;
   }
 
-  private boolean isNumeric(String number){
-    return false;
+  private boolean isNumeric(String strNumber){
+    if (strNumber == null) return false;
+    String Number = strNumber.replaceAll(",", ".");
+    // regex
+    return Number.matches("[+-]?[0-9]*\\\\.?[0.9]+");
   }
 
-  private Double convertToDouble(String number){
-    return 1D;
+  private Double convertToDouble(String strNumber){
+    // o 0D é um 0 double
+    if (strNumber == null) return 0D;
+    String Number = strNumber.replaceAll(",", ".");
+    if (isNumeric(Number)) return Double.parseDouble(Number);
+    return 0D;
   }
 
 }
